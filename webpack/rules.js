@@ -18,8 +18,6 @@ const rules = [{
         localIdentName: '[name]__[local]___[hash:base64:5]'
       },
     }, {
-      loader: 'postcss-loader',
-    }, {
       loader: 'sass-loader',
       options: {
         sourceMap: true,
@@ -35,11 +33,9 @@ const rules = [{
     options: {
       sourceMap: true,
       importLoaders: 2,
-      modules: true,
+      modules: false,
       localIdentName: '[name]__[local]___[hash:base64:5]'
     },
-  }, {
-    loader: 'postcss-loader',
   }],
 }, {
   test: /\.(woff2|woff|ttf|eot|svg)(\?.*$|$)/,

@@ -18,5 +18,11 @@ const devServer = {
     chunks: false,
     chunkModules: false,
   },
+  proxy: {
+    "/api/*":{
+      target:"http://localhost:8000/",
+      secure:"false"
+    },
+  },
 };
 module.exports = devServer;

@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import Header from '../containers/Header';
+import Main from '../containers/Main';
+import Footer from '../containers/Footer';
 
 class App extends Component {
-render() {
+  render() {
     return (
-      <div>Hello it's me</div>
+      <div>
+        <Header {...this.props} />
+        <Main />
+        <Footer />
+      </div>
     );
   }
 }

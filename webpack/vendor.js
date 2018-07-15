@@ -14,5 +14,10 @@ const vendor = [
   'moment',
   'localforage',
   'react-loadable',
+  'redux-persist',
+  'redux-persist-transform-filter',
+  'redux-api-middleware',
+  'jwt-decode',
+  'react-transition-group',
 ];
 module.exports = vendor;

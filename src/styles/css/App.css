@@ -1,0 +1,28 @@
+.login-page {
+  width: 100vh;
+  height: 100vh;
+  background: black;
+  display: table; }
+  .login-page h1 {
+    margin-bottom: 50px; }
+  .login-page form {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white; }
+    .login-page form input {
+      display: block;
+      margin: 30px auto;
+      padding: 7px;
+      width: 300px; }
+
+.header {
+  background: black; }
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+  color: #212529; }
+
+/*# sourceMappingURL=App.css.map */

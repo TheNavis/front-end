@@ -1,0 +1,24 @@
+.login-page {
+  width: 100vh;
+  height: 100vh;
+  background: black;
+  display: table;
+
+  h1 {
+  	margin-bottom: 50px;
+  }
+
+  form {
+  	display: table-cell;
+  	vertical-align: middle;
+  	text-align: center;
+  	color: white;
+
+  	input {
+  		display: block;
+  		margin: 30px auto;
+  		padding: 7px;
+  		width: 300px;
+  	}
+  }
+}
