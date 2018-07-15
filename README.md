@@ -24,7 +24,7 @@ git push
 ```
 
 ## Demo
-https://thenavis.netlify.com
+https://thenavis.netlify.com (Backend not deployed yet so can't login yet)
 
 ## Personal Learning so far
 
@@ -39,3 +39,4 @@ Currently, this is just an empty site with login and logout function
 1. Enable registration of new user with email authentication
 2. Add more content after login
 3. Style content
+4. Setup Docker
