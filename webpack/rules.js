@@ -45,11 +45,34 @@ const rules = [{
     join(__dirname, 'node_modules'),
   ],
 }, {
-  test: /\.(jpg|jpeg|gif|png|ico)(\?.*$|$)$/,
-  loader: 'file-loader?name=img/[name].[ext]',
-  include: [
-    join(__dirname, 'src'),
-    join(__dirname, 'node_modules'),
+  test: /\.(gif|png|jpe?g|svg)$/i,
+  use: [{
+    loader: 'file-loader',
+    options: {
+      name: '[name]_[hash].[ext]',
+    },
+  }, {
+    loader: 'image-webpack-loader',
+    options: {
+      mozjpeg: {
+        progressive: true,
+        quality: 65
+      },
+      optipng: {
+        enabled: true,
+      },
+      pngquant: {
+        quality: '65-90',
+        speed: 4
+      },
+      gifsicle: {
+        interlaced: false,
+      },
+      webp: {
+        quality: 75
+      }
+    }
+  },
   ],
 }];
 module.exports = rules;

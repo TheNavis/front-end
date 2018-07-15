@@ -32,7 +32,7 @@ export default class LoginForm extends Component {
         <h1>SIGN IN</h1>
         <input name="username" type="text" value={this.state.username} onChange={this.handleInputChange} placeholder="Enter username" />
         <input name="password" type="password" value={this.state.password} onChange={this.handleInputChange} placeholder="Enter password" />
-        <input name="submit" type="submit" value="Login" />
+        <input className="button" name="submit" type="submit" value="Login" />
       </form>
     )
   }
